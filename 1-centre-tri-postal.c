@@ -4,7 +4,7 @@
 int main()
 {
 	int count, i, id, code;
-	char bla[4];
+	char bla[5];
 	float weight;
 	float parcels[2][PARCELS_MAX];
 
@@ -15,25 +15,25 @@ int main()
 		switch(id)
 		{
 			case 1:
-			scanf(" %s %d\n", bla, &code);
-			parcels[1][i] = (float)code;
-			parcels[2][i] = LIGHTWEIGHT;
+			scanf(" %s %d", bla, &code);
+			parcels[0][i] = (float)code;
+			parcels[1][i] = LIGHTWEIGHT;
 			break;
 			case 2:
-			scanf(" %f %d %s\n", &weight, &code, bla);
-			parcels[1][i] = (float)code;
-			parcels[2][i] = weight;
+			scanf(" %f %d %s", &weight, &code, bla);
+			parcels[0][i] = (float)code;
+			parcels[1][i] = weight;
 			break;
 			case 3:
-			scanf(" %d %f\n", &code, &weight);
-			parcels[1][i] = (float)code;
-			parcels[2][i] = weight;
+			scanf(" %d %f", &code, &weight);
+			parcels[0][i] = (float)code;
+			parcels[1][i] = weight;
 			break;
 		}
 	}
 	for(i = 0; i < count; i++)
 	{
-		printf("%.0f %.1f\n", parcels[1][i], parcels[2][i]);
+		printf("%.0f %.1f\n", parcels[0][i], parcels[1][i]);
 	}
 	return 0;
 }
