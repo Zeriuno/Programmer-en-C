@@ -21,7 +21,9 @@ int main()
 			break;
 			case 2:
 			scanf(" %f %d %s", &weight, &code, bla);
+			printf("code = %d\n", code);
 			parcels[0][i] = (float)code;
+			printf("parcels[0][i] = %f\n", parcels[0][i]);
 			parcels[1][i] = weight;
 			break;
 			case 3:
