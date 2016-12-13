@@ -4,7 +4,7 @@
 int main()
 {
 	int count, i, id, code;
-	char bla[5];
+	char bla[6];
 	float weight;
 	float parcels[2][PARCELS_MAX];
 
